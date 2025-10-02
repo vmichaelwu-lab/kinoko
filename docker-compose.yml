@@ -17,6 +17,7 @@ services:
       CENTRAL_PORT: "8282"
       SERVER_HOST: "127.0.0.1"
       DATABASE_HOST: "database"
+      GLOBAL_EXP: "5"
       # ServerConfig
       WORLD_ID: "0"
       WORLD_NAME: "Kinoko"

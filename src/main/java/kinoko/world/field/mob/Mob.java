@@ -203,9 +203,9 @@ public final class Mob extends Life implements ControlledObject, Encodable {
     public int getExp() {
         if (getMobStat().hasOption(MobTemporaryStat.Showdown)) {
             final double multiplier = (getMobStat().getOption(MobTemporaryStat.Showdown).nOption + 100) / 100.0;
-            return (int) (template.getExp() * multiplier);
+            return (int) (template.getExp() * multiplier * Util.getEnv("GLOBAL_EXP", 1));
         }
-        return template.getExp();
+        return template.getExp() * Util.getEnv("GLOBAL_EXP", 1);
     }
 
     public boolean isSlowUsed() {
