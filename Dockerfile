@@ -6,6 +6,7 @@ WORKDIR /kinoko
 COPY pom.xml .
 RUN mvn dependency:go-offline
 
+COPY wz ./wz
 COPY src ./src
 RUN mvn clean package
 
