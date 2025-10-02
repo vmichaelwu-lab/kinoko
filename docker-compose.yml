@@ -20,7 +20,7 @@ services:
       # ServerConfig
       WORLD_ID: "0"
       WORLD_NAME: "Kinoko"
-      CHANNEL_COUNT: "5"
+      CHANNEL_COUNT: "1"
       AUTO_CREATE_ACCOUNT: "true"
       REQUIRE_SECONDARY_PASSWORD: "true"
       WZ_DIRECTORY: "/kinoko/wz"
