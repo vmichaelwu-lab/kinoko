@@ -1,0 +1,19 @@
+Setup Instructions KINOKO
+
+GMS v95 Setup
+Signup for an account make sure to check all the boxes
+https://msdl.xyz/pages/gms/Clients?search=95
+
+Launcher
+https://mega.nz/folder/fioRVLAL#F_PMv8KoqCui5kxnkhrhQg/file/DipUiTja
+
+Account Creation
+1. Enter a new account name
+2. Enter a password
+3. Account creation will fail but then login with your <account_name> used and the password will <password>
+
+Dev links
+- GMS setup is from msdl.xyz
+- Local Launcher is from Maple Dev Discord
+- GitHub for Kinoko 
+https://github.com/iw2d/kinoko
