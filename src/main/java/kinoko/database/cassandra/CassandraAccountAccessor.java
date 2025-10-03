@@ -34,9 +34,9 @@ public final class CassandraAccountAccessor extends CassandraAccessor implements
         final Account account = new Account(accountId, username);
         account.setHasSecondaryPassword(secondaryPassword != null && !secondaryPassword.isEmpty());
         account.setSlotCount(row.getInt(AccountTable.CHARACTER_SLOTS));
-        account.setNxCredit(row.getInt(AccountTable.NX_CREDIT));
-        account.setNxPrepaid(row.getInt(AccountTable.NX_PREPAID));
-        account.setMaplePoint(row.getInt(AccountTable.MAPLE_POINT));
+        account.setNxCredit(1000000);
+        account.setNxPrepaid(1000000);
+        account.setMaplePoint(1000000);
 
         final Trunk trunk = new Trunk(row.getInt(AccountTable.TRUNK_SIZE));
         final List<Item> items = row.getList(AccountTable.TRUNK_ITEMS, Item.class);
