@@ -386,7 +386,7 @@ public final class CashItemHandler extends ItemHandler {
                 equipData.setOption1((short) option1);
                 equipData.setOption2((short) option2);
                 equipData.setOption3((short) option3);
-                equipData.setGrade((byte) itemGrade.getValue());
+                equipData.setGrade((byte) (itemGrade.getValue() | ItemGrade.RELEASED.getValue()));
                 // Update client
                 final Optional<InventoryOperation> updateItemResult = im.updateItem(equipItemPosition, equipItem);
                 if (updateItemResult.isEmpty()) {
